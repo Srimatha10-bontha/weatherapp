@@ -1,0 +1,156 @@
+/* Main Weather Container */
+.Weather {
+    place-self: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15vh;
+    box-sizing: border-box;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.search-bar input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    padding: 18px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.search-bar img {
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+/* Weather Icon Styling */
+.Weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+
+/* Temperature Display Styling */
+.temperature {
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Location Display Styling */
+.location {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Weather Data Container */
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
+
+/* Media Query for Medium Devices */
+@media (max-width: 768px) {
+    .Weather {
+        width: 90%;
+        max-width: 350px;
+        margin-top: 10vh;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .location {
+        font-size: 32px;
+    }
+
+    .weather-data .col {
+        font-size: 18px;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+    }
+
+    .search-bar img {
+        width: 45px;
+        padding: 12px;
+    }
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 480px) {
+    .Weather {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 28px;
+    }
+
+    .weather-data .col {
+        font-size: 16px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+        padding: 14px;
+        border-radius: 35px;
+    }
+
+    .search-bar img {
+        width: 40px;
+        padding: 10px;
+    }
+}
